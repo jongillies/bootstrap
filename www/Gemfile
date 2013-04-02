@@ -35,6 +35,9 @@ gem 'bootswatch-rails'
 gem 'kaminari' # Pagination
 gem 'ransack'  # Search
 gem 'devise'   # Authentication
+gem "rolify",        :git => "git://github.com/EppO/rolify.git" # Roles
+gem 'scopify'
+gem 'cancan'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
