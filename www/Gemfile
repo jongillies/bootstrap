@@ -34,6 +34,7 @@ gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'bootswatch-rails'
 gem 'kaminari' # Pagination
 gem 'ransack'  # Search
+gem 'devise'   # Authentication
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
