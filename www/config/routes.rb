@@ -4,10 +4,10 @@ MyApplication::Application.routes.draw do
   end
   root :to => "home#index"
 
+#  devise_for :users do
+#    get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
+#  end
   devise_for :users
-  devise_scope :users do
-    get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
-  end
 
   resources :users
 end
