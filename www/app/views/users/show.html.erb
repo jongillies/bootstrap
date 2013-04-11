@@ -1,3 +1,31 @@
 <h3>User</h3>
-<p>User: <%= @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+<div class="span8">
+  <table class="table table-condensed">
+    <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Registered</th>
+      <th>Role</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><%= link_to @user.name, @user %></td>
+      <td><%= @user.email %></td>
+      <td><%= @user.created_at.to_date %></td>
+      <td><%= @user.roles.first.name.titleize unless @user.roles.first.nil? %></td>
+      <td>
+        <% if current_user.has_role? :admin %>
+            <a data-toggle="modal" href="#role-options-<%= @user.id %>" class="btn btn-mini" type="button">Change
+              role</a>
+        <% end %>
+        <%= render @user %>
+      </td>
+      <td><%= link_to("Delete user", user_path(@user), :data => {:confirm => "Are you sure?"}, :method => :delete, :class => 'btn btn-mini') if current_user.has_role? :admin %></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
