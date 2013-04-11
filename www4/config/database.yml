@@ -25,7 +25,7 @@ test: &test
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: rails3-bootstrap-devise-cancan_test
+  database: rails3-bootstrap-devise-cancan_development
   pool: 5
   username: root
   password:

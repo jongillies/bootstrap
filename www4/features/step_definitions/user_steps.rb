@@ -6,7 +6,7 @@ def create_visitor
 end
 
 def find_user
-  @user ||= User.first conditions: {:email => @visitor[:email]}
+  @user ||= User.where(:email => @visitor[:email]).first
 end
 
 def create_unconfirmed_user
@@ -19,19 +19,19 @@ end
 def create_user
   create_visitor
   delete_user
-  @user = FactoryGirl.create(:user, email: @visitor[:email])
+  @user = FactoryGirl.create(:user, @visitor)
 end
 
 def delete_user
-  @user ||= User.first conditions: {:email => @visitor[:email]}
+  @user ||= User.where(:email => @visitor[:email]).first
   @user.destroy unless @user.nil?
 end
 
 def sign_up
   delete_user
   visit '/users/sign_up'
-  fill_in "Name", :with => @visitor[:name]
-  fill_in "Email", :with => @visitor[:email]
+  fill_in "user_name", :with => @visitor[:name]
+  fill_in "user_email", :with => @visitor[:email]
   fill_in "user_password", :with => @visitor[:password]
   fill_in "user_password_confirmation", :with => @visitor[:password_confirmation]
   click_button "Sign up"
@@ -40,8 +40,8 @@ end
 
 def sign_in
   visit '/users/sign_in'
-  fill_in "Email", :with => @visitor[:email]
-  fill_in "Password", :with => @visitor[:password]
+  fill_in "user_email", :with => @visitor[:email]
+  fill_in "user_password", :with => @visitor[:password]
   click_button "Sign in"
 end
 
@@ -101,6 +101,19 @@ When /^I sign up without a password$/ do
   sign_up
 end
 
+When /^I sign up with a to short password$/ do
+  create_visitor
+  @visitor = @visitor.merge(:password => "short", :password_confirmation => "short")
+  sign_up
+end
+
+When $/ do
+  create_visitor
+  @visitor = @visitor.merge(:password => "")
+  sign_up
+end
+
+
 When /^I sign up with a mismatched password confirmation$/ do
   create_visitor
   @visitor = @visitor.merge(:password_confirmation => "changeme123")
@@ -123,7 +136,7 @@ end
 
 When /^I edit my account details$/ do
   click_link "Edit account"
-  fill_in "Name", :with => "newname"
+  fill_in "user_name", :with => "newname"
   fill_in "user_current_password", :with => @visitor[:password]
   click_button "Update"
 end
@@ -158,19 +171,23 @@ Then /^I should see a successful sign up message$/ do
 end
 
 Then /^I should see an invalid email message$/ do
-  page.should have_content "Emailis invalid"
+  page.should have_content "is invalid"
 end
 
 Then /^I should see a missing password message$/ do
-  page.should have_content "Passwordcan't be blank"
+  page.should have_content "can't be blank"
 end
 
 Then /^I should see a missing password confirmation message$/ do
-  page.should have_content "Passworddoesn't match confirmation"
+  page.should have_content "doesn't match confirmation"
 end
 
 Then /^I should see a mismatched password message$/ do
-  page.should have_content "Passworddoesn't match confirmation"
+  page.should have_content "doesn't match confirmation"
+end
+
+Then /^I should see a password is too short message$/ do
+  page.should have_content "is too short"
 end
 
 Then /^I should see a signed out message$/ do
