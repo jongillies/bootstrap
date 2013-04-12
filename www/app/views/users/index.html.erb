@@ -12,10 +12,10 @@
   <table class="table table-condensed">
     <thead>
     <tr>
-      <th>Username</th>
-      <th>Email</th>
-      <th>Registered</th>
-      <th>Role</th>
+      <th><%= sort_link @search, :name, "Name" %></th>
+      <th><%= sort_link @search, :email, "Email" %></th>
+      <th><%= sort_link @search, :registered, "Registered" %></th>
+      <th><%= sort_link @search, :role, "Role" %></th>
       <th></th>
       <th></th>
     </tr>
