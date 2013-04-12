@@ -205,13 +205,13 @@ DEPENDENCIES
   factory_girl_rails (>= 4.2.0)
   figaro (>= 0.6.3)
   hash_syntax
-  jquery-rails
-  kaminari
+  jquery-rails (>= 2.2.1)
+  kaminari (>= 0.14.1)
   launchy (>= 2.2.0)
-  mysql2
+  mysql2 (>= 0.3.11)
   quiet_assets (>= 1.0.2)
   rails (= 3.2.13)
-  ransack
+  ransack (>= 0.7.2)
   rolify (>= 3.2.0)
   rspec-rails (>= 2.12.2)
   sass-rails (~> 3.2.3)
