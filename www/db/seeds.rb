@@ -10,12 +10,12 @@
 # See http://railsapps.github.com/rails-environment-variables.html
 #
 
-YAML::load_file("db/seeds/roles_and_users.yml")['roles'].each do |role|
+YAML::load_file('db/seeds/roles_and_users.yml')['roles'].each do |role|
   role = Role.find_or_create_by_name({:name => role}, :without_protection => true)
   puts "Role> #{role.name}"
 end
 
-YAML::load_file("db/seeds/roles_and_users.yml")['users'].each do |_, user|
+YAML::load_file('db/seeds/roles_and_users.yml')['users'].each do |_, user|
   db_user = User.find_or_create_by_email name: user['name'],
                                          email: user['email'],
                                          password: user['password'],

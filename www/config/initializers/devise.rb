@@ -4,10 +4,10 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = "Devise::Mailer"
+  # config.mailer = 'Devise::Mailer'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -58,7 +58,7 @@ Devise.setup do |config|
   # config.http_authenticatable_on_xhr = true
 
   # The realm used in Http Basic Authentication. "Application" by default.
-  # config.http_authentication_realm = "Application"
+  # config.http_authentication_realm = 'Application'
 
   # It will change confirmation, password recovery and other workflows
   # to behave the same regardless if the e-mail provided was right or wrong.
@@ -82,7 +82,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "907a5227dbf0da6002167da6fe00f646393a084f14bc45b3c7371b760d0363980d318eeafedb17b6c435c4cb02aa97c7ad4e1816d242fbf6e398e8a8a394c83c"
+  # config.pepper = 907a5227dbf0da6002167da6fe00f646393a084f14bc45b3c7371b760d0363980d318eeafedb17b6c435c4cb02aa97c7ad4e1816d242fbf6e398e8a8a394c83c'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -205,7 +205,7 @@ Devise.setup do |config|
   # should add them to the navigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
-  # config.navigational_formats = ["*/*", :html]
+  # config.navigational_formats = [''*/*'', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = Rails.env.test? ? :get : :delete
@@ -229,12 +229,12 @@ Devise.setup do |config|
   # is mountable, there are some extra configurations to be taken into account.
   # The following options are available, assuming the engine is mounted as:
   #
-  #     mount MyEngine, at: "/my_engine"
+  #     mount MyEngine, at: '/my_engine'
   #
   # The router that invoked `devise_for`, in the example above, would be:
   # config.router_name = :my_engine
   #
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
-  # config.omniauth_path_prefix = "/my_engine/users/auth"
+  # config.omniauth_path_prefix = ''/my_engine/users/auth'
 end
