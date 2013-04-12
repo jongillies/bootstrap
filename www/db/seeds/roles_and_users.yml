@@ -1,0 +1,678 @@
+roles:
+  - admin
+  - user
+  - vip
+users:
+  admin:
+    name: Administrator
+    email: admin@example.com
+    password: changeme
+    roles:
+      - admin
+      - user
+  user:
+    name: Joe User
+    email: user@example.com
+    password: changeme
+    roles:
+      - user
+  user0:
+    name: Joe User0
+    email: user0@example.com
+    password: changeme
+    roles:
+      - user
+  user1:
+    name: Joe User1
+    email: user1@example.com
+    password: changeme
+    roles:
+      - user
+  user2:
+    name: Joe User2
+    email: user2@example.com
+    password: changeme
+    roles:
+      - user
+  user3:
+    name: Joe User3
+    email: user3@example.com
+    password: changeme
+    roles:
+      - user
+  user4:
+    name: Joe User4
+    email: user4@example.com
+    password: changeme
+    roles:
+      - user
+  user5:
+    name: Joe User5
+    email: user5@example.com
+    password: changeme
+    roles:
+      - user
+  user6:
+    name: Joe User6
+    email: user6@example.com
+    password: changeme
+    roles:
+      - user
+  user7:
+    name: Joe User7
+    email: user7@example.com
+    password: changeme
+    roles:
+      - user
+  user8:
+    name: Joe User8
+    email: user8@example.com
+    password: changeme
+    roles:
+      - user
+  user9:
+    name: Joe User9
+    email: user9@example.com
+    password: changeme
+    roles:
+      - user
+  dilcamus:
+    name: Dilettantism Camus
+    email: Dilettantism.Camus@example.com
+    password: changeme
+    roles:
+      - user
+  anascup:
+    name: Anapodeictic Scup
+    email: Anapodeictic.Scup@example.com
+    password: changeme
+    roles:
+      - user
+  plaurucu:
+    name: Plasmopara Urucu
+    email: Plasmopara.Urucu@example.com
+    password: changeme
+    roles:
+      - user
+  reacamelid:
+    name: Reassign Camelid
+    email: Reassign.Camelid@example.com
+    password: changeme
+    roles:
+      - user
+  tedavichi:
+    name: Tediousome Avichi
+    email: Tediousome.Avichi@example.com
+    password: changeme
+    roles:
+      - user
+  falpatrimony:
+    name: Falcata Patrimony
+    email: Falcata.Patrimony@example.com
+    password: changeme
+    roles:
+      - user
+  uncdyaster:
+    name: Uncorruptibleness Dyaster
+    email: Uncorruptibleness.Dyaster@example.com
+    password: changeme
+    roles:
+      - user
+  perkhatti:
+    name: Perfectibilian Khatti
+    email: Perfectibilian.Khatti@example.com
+    password: changeme
+    roles:
+      - user
+  dogolaf:
+    name: Dog Olaf
+    email: Dog.Olaf@example.com
+    password: changeme
+    roles:
+      - user
+  annbigential:
+    name: Annueler Bigential
+    email: Annueler.Bigential@example.com
+    password: changeme
+    roles:
+      - user
+  dogmultiverse:
+    name: Doggerelizer Multiverse
+    email: Doggerelizer.Multiverse@example.com
+    password: changeme
+    roles:
+      - user
+  lepcumuli:
+    name: Leptocardia Cumuli
+    email: Leptocardia.Cumuli@example.com
+    password: changeme
+    roles:
+      - user
+  elesaltcat:
+    name: Electrovection Saltcat
+    email: Electrovection.Saltcat@example.com
+    password: changeme
+    roles:
+      - user
+  serdemidoctor:
+    name: Sericate Demidoctor
+    email: Sericate.Demidoctor@example.com
+    password: changeme
+    roles:
+      - user
+  tadlanket:
+    name: Tadjik Lanket
+    email: Tadjik.Lanket@example.com
+    password: changeme
+    roles:
+      - user
+  barunring:
+    name: Barrabora Unring
+    email: Barrabora.Unring@example.com
+    password: changeme
+    roles:
+      - user
+  chononcomposite:
+    name: Chordaceae Noncomposite
+    email: Chordaceae.Noncomposite@example.com
+    password: changeme
+    roles:
+      - user
+  zaganisomyodous:
+    name: Zagged Anisomyodous
+    email: Zagged.Anisomyodous@example.com
+    password: changeme
+    roles:
+      - user
+  renhafiz:
+    name: Renovatingly Hafiz
+    email: Renovatingly.Hafiz@example.com
+    password: changeme
+    roles:
+      - user
+  fascharlatanistic:
+    name: Fascial Charlatanistic
+    email: Fascial.Charlatanistic@example.com
+    password: changeme
+    roles:
+      - user
+  unicalycozoic:
+    name: Uninspirited Calycozoic
+    email: Uninspirited.Calycozoic@example.com
+    password: changeme
+    roles:
+      - user
+  flabination:
+    name: Flaminica Bination
+    email: Flaminica.Bination@example.com
+    password: changeme
+    roles:
+      - user
+  shrjukebox:
+    name: Shrinkingly Jukebox
+    email: Shrinkingly.Jukebox@example.com
+    password: changeme
+    roles:
+      - user
+  asslongicone:
+    name: Assertable Longicone
+    email: Assertable.Longicone@example.com
+    password: changeme
+    roles:
+      - user
+  creincomputable:
+    name: Creatine Incomputable
+    email: Creatine.Incomputable@example.com
+    password: changeme
+    roles:
+      - user
+  refneoplasm:
+    name: Refiner Neoplasm
+    email: Refiner.Neoplasm@example.com
+    password: changeme
+    roles:
+      - user
+  tapgarnisheement:
+    name: Tapen Garnisheement
+    email: Tapen.Garnisheement@example.com
+    password: changeme
+    roles:
+      - user
+  incdemonolatry:
+    name: Incantatory Demonolatry
+    email: Incantatory.Demonolatry@example.com
+    password: changeme
+    roles:
+      - user
+  surunbaized:
+    name: Surveillant Unbaized
+    email: Surveillant.Unbaized@example.com
+    password: changeme
+    roles:
+      - user
+  prodisglut:
+    name: Provedly Disglut
+    email: Provedly.Disglut@example.com
+    password: changeme
+    roles:
+      - user
+  siduncompassed:
+    name: Sideration Uncompassed
+    email: Sideration.Uncompassed@example.com
+    password: changeme
+    roles:
+      - user
+  codinfusorial:
+    name: Codescendant Infusorial
+    email: Codescendant.Infusorial@example.com
+    password: changeme
+    roles:
+      - user
+  desprerailway:
+    name: Desmosite Prerailway
+    email: Desmosite.Prerailway@example.com
+    password: changeme
+    roles:
+      - user
+  ovetidewaiter:
+    name: Overintensely Tidewaiter
+    email: Overintensely.Tidewaiter@example.com
+    password: changeme
+    roles:
+      - user
+  rodtherology:
+    name: Rodlike Therology
+    email: Rodlike.Therology@example.com
+    password: changeme
+    roles:
+      - user
+  nitplanula:
+    name: Nitrogenization Planula
+    email: Nitrogenization.Planula@example.com
+    password: changeme
+    roles:
+      - user
+  supsailmaking:
+    name: Supramortal Sailmaking
+    email: Supramortal.Sailmaking@example.com
+    password: changeme
+    roles:
+      - user
+  satfascisticize:
+    name: Satisfactive Fascisticize
+    email: Satisfactive.Fascisticize@example.com
+    password: changeme
+    roles:
+      - user
+  turranked:
+    name: Turnerite Ranked
+    email: Turnerite.Ranked@example.com
+    password: changeme
+    roles:
+      - user
+  finblackguardize:
+    name: Fineless Blackguardize
+    email: Fineless.Blackguardize@example.com
+    password: changeme
+    roles:
+      - user
+  antdipleural:
+    name: Antistrophic Dipleural
+    email: Antistrophic.Dipleural@example.com
+    password: changeme
+    roles:
+      - user
+  coecartelize:
+    name: Coequalize Cartelize
+    email: Coequalize.Cartelize@example.com
+    password: changeme
+    roles:
+      - user
+  mednonevolutionist:
+    name: Medullose Nonevolutionist
+    email: Medullose.Nonevolutionist@example.com
+    password: changeme
+    roles:
+      - user
+  fadmicrometer:
+    name: Fadedness Micrometer
+    email: Fadedness.Micrometer@example.com
+    password: changeme
+    roles:
+      - user
+  oxyfaon:
+    name: Oxycobaltammine Faon
+    email: Oxycobaltammine.Faon@example.com
+    password: changeme
+    roles:
+      - user
+  episuitoress:
+    name: Epigraphical Suitoress
+    email: Epigraphical.Suitoress@example.com
+    password: changeme
+    roles:
+      - user
+  treslaver:
+    name: Treelike Slaver
+    email: Treelike.Slaver@example.com
+    password: changeme
+    roles:
+      - user
+  outsubthrill:
+    name: Outquote Subthrill
+    email: Outquote.Subthrill@example.com
+    password: changeme
+    roles:
+      - user
+  flecomminative:
+    name: Flechette Comminative
+    email: Flechette.Comminative@example.com
+    password: changeme
+    roles:
+      - user
+  preoverbuild:
+    name: Preindependently Overbuild
+    email: Preindependently.Overbuild@example.com
+    password: changeme
+    roles:
+      - user
+  talshowmanism:
+    name: Talukdar Showmanism
+    email: Talukdar.Showmanism@example.com
+    password: changeme
+    roles:
+      - user
+  ranstripeless:
+    name: Ranche Stripeless
+    email: Ranche.Stripeless@example.com
+    password: changeme
+    roles:
+      - user
+  phosciuromorpha:
+    name: Photolysis Sciuromorpha
+    email: Photolysis.Sciuromorpha@example.com
+    password: changeme
+    roles:
+      - user
+  azoyestereven:
+    name: Azobenzoic Yestereven
+    email: Azobenzoic.Yestereven@example.com
+    password: changeme
+    roles:
+      - user
+  mondermatotomy:
+    name: Moneran Dermatotomy
+    email: Moneran.Dermatotomy@example.com
+    password: changeme
+    roles:
+      - user
+  gueduopoly:
+    name: Guernsey Duopoly
+    email: Guernsey.Duopoly@example.com
+    password: changeme
+    roles:
+      - user
+  cytcanaigre:
+    name: Cytometer Canaigre
+    email: Cytometer.Canaigre@example.com
+    password: changeme
+    roles:
+      - user
+  stiscratchiness:
+    name: Stickers Scratchiness
+    email: Stickers.Scratchiness@example.com
+    password: changeme
+    roles:
+      - user
+  choventriculography:
+    name: Choline Ventriculography
+    email: Choline.Ventriculography@example.com
+    password: changeme
+    roles:
+      - user
+  autsubdolous:
+    name: Autotropism Subdolous
+    email: Autotropism.Subdolous@example.com
+    password: changeme
+    roles:
+      - user
+  nonrussification:
+    name: Nonhydrogenous Russification
+    email: Nonhydrogenous.Russification@example.com
+    password: changeme
+    roles:
+      - user
+  prowrongous:
+    name: Prosonomasia Wrongous
+    email: Prosonomasia.Wrongous@example.com
+    password: changeme
+    roles:
+      - user
+  stedeutoplasmic:
+    name: Stemma Deutoplasmic
+    email: Stemma.Deutoplasmic@example.com
+    password: changeme
+    roles:
+      - user
+  swaisoparaffin:
+    name: Swamp Isoparaffin
+    email: Swamp.Isoparaffin@example.com
+    password: changeme
+    roles:
+      - user
+  unvunadapt:
+    name: Unvisited Unadapt
+    email: Unvisited.Unadapt@example.com
+    password: changeme
+    roles:
+      - user
+  chlpernine:
+    name: Chloropsia Pernine
+    email: Chloropsia.Pernine@example.com
+    password: changeme
+    roles:
+      - user
+  nonbismutite:
+    name: Nonpractical Bismutite
+    email: Nonpractical.Bismutite@example.com
+    password: changeme
+    roles:
+      - user
+  outcelaeno:
+    name: Outfeast Celaeno
+    email: Outfeast.Celaeno@example.com
+    password: changeme
+    roles:
+      - user
+  speaspidosperma:
+    name: Spectatress Aspidosperma
+    email: Spectatress.Aspidosperma@example.com
+    password: changeme
+    roles:
+      - user
+  squisotheral:
+    name: Squawker Isotheral
+    email: Squawker.Isotheral@example.com
+    password: changeme
+    roles:
+      - user
+  cycpaphiopedilum:
+    name: Cyclostyle Paphiopedilum
+    email: Cyclostyle.Paphiopedilum@example.com
+    password: changeme
+    roles:
+      - user
+  vasoverregularly:
+    name: Vastily Overregularly
+    email: Vastily.Overregularly@example.com
+    password: changeme
+    roles:
+      - user
+  corensile:
+    name: Corrigibleness Ensile
+    email: Corrigibleness.Ensile@example.com
+    password: changeme
+    roles:
+      - user
+  tostiny:
+    name: Tossy Tiny
+    email: Tossy.Tiny@example.com
+    password: changeme
+    roles:
+      - user
+  untundelightsome:
+    name: Unthread Undelightsome
+    email: Unthread.Undelightsome@example.com
+    password: changeme
+    roles:
+      - user
+  pedundefeatedly:
+    name: Pediform Undefeatedly
+    email: Pediform.Undefeatedly@example.com
+    password: changeme
+    roles:
+      - user
+  hetcircumstanced:
+    name: Heterophile Circumstanced
+    email: Heterophile.Circumstanced@example.com
+    password: changeme
+    roles:
+      - user
+  reipuya:
+    name: Reinterrogation Puya
+    email: Reinterrogation.Puya@example.com
+    password: changeme
+    roles:
+      - user
+  steallokinetic:
+    name: Stereoscopist Allokinetic
+    email: Stereoscopist.Allokinetic@example.com
+    password: changeme
+    roles:
+      - user
+  newrotella:
+    name: New Rotella
+    email: New.Rotella@example.com
+    password: changeme
+    roles:
+      - user
+  cyrpresubscriber:
+    name: Cyrillaceous Presubscriber
+    email: Cyrillaceous.Presubscriber@example.com
+    password: changeme
+    roles:
+      - user
+  symrhynsburger:
+    name: Symbolography Rhynsburger
+    email: Symbolography.Rhynsburger@example.com
+    password: changeme
+    roles:
+      - user
+  melheterocystous:
+    name: Melocoton Heterocystous
+    email: Melocoton.Heterocystous@example.com
+    password: changeme
+    roles:
+      - user
+  ovedrophead:
+    name: Overslight Drophead
+    email: Overslight.Drophead@example.com
+    password: changeme
+    roles:
+      - user
+  undascensional:
+    name: Undisputedness Ascensional
+    email: Undisputedness.Ascensional@example.com
+    password: changeme
+    roles:
+      - user
+  procounterend:
+    name: Programmatist Counterend
+    email: Programmatist.Counterend@example.com
+    password: changeme
+    roles:
+      - user
+  pasfascia:
+    name: Passible Fascia
+    email: Passible.Fascia@example.com
+    password: changeme
+    roles:
+      - user
+  morvariolovaccine:
+    name: Morenosite Variolovaccine
+    email: Morenosite.Variolovaccine@example.com
+    password: changeme
+    roles:
+      - user
+  stocolymbion:
+    name: Stomatogastric Colymbion
+    email: Stomatogastric.Colymbion@example.com
+    password: changeme
+    roles:
+      - user
+  ophxerophagy:
+    name: Ophthalmagra Xerophagy
+    email: Ophthalmagra.Xerophagy@example.com
+    password: changeme
+    roles:
+      - user
+  grumesoplanktonic:
+    name: Grumbly Mesoplanktonic
+    email: Grumbly.Mesoplanktonic@example.com
+    password: changeme
+    roles:
+      - user
+  femnonenrolled:
+    name: Femaleness Nonenrolled
+    email: Femaleness.Nonenrolled@example.com
+    password: changeme
+    roles:
+      - user
+  caspresenility:
+    name: Casco Presenility
+    email: Casco.Presenility@example.com
+    password: changeme
+    roles:
+      - user
+  shopotate:
+    name: Shoer Potate
+    email: Shoer.Potate@example.com
+    password: changeme
+    roles:
+      - user
+  molreometer:
+    name: Molariform Reometer
+    email: Molariform.Reometer@example.com
+    password: changeme
+    roles:
+      - user
+  oleinerasable:
+    name: Oleose Inerasable
+    email: Oleose.Inerasable@example.com
+    password: changeme
+    roles:
+      - user
+  twipneumonectasia:
+    name: Twineless Pneumonectasia
+    email: Twineless.Pneumonectasia@example.com
+    password: changeme
+    roles:
+      - user
+  wigabbey:
+    name: Wiglike Abbey
+    email: Wiglike.Abbey@example.com
+    password: changeme
+    roles:
+      - user
+  airhying:
+    name: Airman Hying
+    email: Airman.Hying@example.com
+    password: changeme
+    roles:
+      - user
+  aluhapuku:
+    name: Aluminosity Hapuku
+    email: Aluminosity.Hapuku@example.com
+    password: changeme
+    roles:
+      - user
