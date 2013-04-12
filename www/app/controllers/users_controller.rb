@@ -3,7 +3,10 @@ class UsersController < ApplicationController
 
   def index
     authorize! :index, @user, :message => 'Not authorized as an administrator.'
-    @users = User.order(:name).page params[:page]
+
+    @search = User.search(params[:q])
+    @users = @search.result.order(:name).page params[:page]
+    #@users = User.order(:name).page params[:page]
   end
 
   def show
