@@ -1,6 +1,24 @@
 My Application
 ========================
 
+To use the twitter-boostrap-rails gem:
+
+ rails g scaffold Post title:string description:text
+ rake db:migrate
+ rails g bootstrap:themed Posts
+
+
+To change the bootswatch theme, modify:
+
+  app/assets/stylesheets/application.css.scss
+
+  Line 4:
+
+  @import "bootswatch/cerulean/variables";
+
+
+Notes
+=====
 This application was generated with the rails_apps_composer gem:
 https://github.com/RailsApps/rails_apps_composer
 provided by the RailsApps Project:

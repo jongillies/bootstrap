@@ -1,25 +1,31 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
-*/
+// Using https://github.com/maxim/bootswatch-rails
+//
+// Only import one of these:
+//
+//@import "bootswatch/amelia/variables";
+//@import "bootswatch/cerulean/variables";
+//@import "bootswatch/cosmo/variables";
+//@import "bootswatch/cyborg/variables";
+//@import "bootswatch/journal/variables";
+//@import "bootswatch/readable/variables";
+//@import "bootswatch/simplex/variables";
+//@import "bootswatch/slate/variables";
+//@import "bootswatch/spacelab/variables";
+//@import "bootswatch/spruce/variables";
+//@import "bootswatch/superhero/variables";
+@import "bootswatch/united/variables";
 
-.content {
-  background-color: #eee;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  box-shadow: 0 1px 2px rgba(0,0,0,.15);
-}
+// Then bootstrap itself
+@import "bootstrap";
+
+// Bootstrap body padding for fixed navbar
+body { padding-top: 60px; }
+
+// Responsive styles go here in case you want them
+@import "bootstrap-responsive";
+
+// And finally bootswatch style itself
+@import "bootswatch/cerulean/bootswatch";
+
+// Whatever application styles you have go last
+//@import "base";
