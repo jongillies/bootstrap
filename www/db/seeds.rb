@@ -25,3 +25,8 @@ YAML::load_file('db/seeds/roles_and_users.yml')['users'].each do |_, user|
   end
   puts "User> #{db_user.name} #{db_user.email}"
 end
+
+YAML::load_file('db/seeds/posts.yml').each do |post|
+  p = Post.find_or_create_by_title(post)
+  puts "Post> #{p.title}"
+end

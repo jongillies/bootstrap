@@ -6,6 +6,12 @@ https://github.com/RailsApps/rails_apps_composer
 provided by the RailsApps Project:
 http://railsapps.github.com/
 
+
+rails g scaffold Post title:string description:text user_id:integer
+rake db:migrate
+rails g bootstrap:themed Posts
+
+
 ________________________
 
 Recipes:
