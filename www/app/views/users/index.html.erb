@@ -3,7 +3,7 @@
 <div class="span8">
 
   <%= search_form_for @search, :html => {:class => "form-inline"} do |f| %>
-      <!--<%= f.label :email_cont_or_name_cont, "Search:" %>-->
+      <!--<%= f.label :email_or_name_cont, "Search:" %>-->
       <%= f.text_field :email_or_name_cont %>
       <%= f.submit "Search", :name => nil, :class => "btn" %>
       <%= f.submit "Clear", :name => nil, :class => "btn", :id => :q_reset %>

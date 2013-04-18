@@ -5,7 +5,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @search = Post.search(params[:q])
+    @posts  = @search.result.order(:created_at).page params[:page]
 
     respond_to do |format|
       format.html # index.html.erb
