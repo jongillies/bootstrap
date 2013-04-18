@@ -6,7 +6,7 @@
     <!--<%= f.label :title_or_description_or_user_name_cont, "Search:" %>-->
     <%= f.text_field :title_or_description_or_user_name_cont %>
     <%= f.submit "Search", :title => nil, :class => "btn" %>
-    <%= f.submit "Clear", :title => nil, :class => "btn", :id => :q_reset %>
+    <!--<%= f.submit "Clear", :title => nil, :class => "btn", :id => :q_reset %>-->
     <% if can? :create, Post %>
         <%= link_to t('.new', :default => t("helpers.links.new")),
                     new_post_path,
