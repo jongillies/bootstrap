@@ -12,8 +12,8 @@
                     new_post_path,
                     :class => 'btn btn-primary' %>
     <% end %>
-    <%= @search.result.count %> of <%= Post.count %>
-
+      <span class="badge"><%= @search.result.count %></span> of
+      <span class="badge badge-inverse"><%= Post.count %></span>
 <% end %>
 </div>
 
