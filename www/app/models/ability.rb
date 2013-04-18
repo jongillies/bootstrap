@@ -11,7 +11,7 @@ class Ability
       can [:create, :read], Post
     end
 
-    can [:edit, :update], Post do |p|
+    can [:edit, :update, :destroy], Post do |p|
       p.user_id == user.id
     end
 
