@@ -12,7 +12,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: myapplication_development
+  database: bootstrap_development
   pool: 5
   username: root
   password:
@@ -25,7 +25,7 @@ development:
 #  adapter: mysql2
 #  encoding: utf8
 #  reconnect: false
-#  database: myapplication_test
+#  database: bootstrap_test
 #  pool: 5
 #  username: root
 #  password:
@@ -41,7 +41,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: myapplication_production
+  database: bootstrap
   pool: 5
   username: root
   password:
