@@ -4,16 +4,16 @@ Greetings!  This project is my attempt to "wire up" a complete Rails 3.2 applica
 
 Features:
 
-| Feature | Descrption |
-| - | - |
-| Rails 3.2 | Awesome MVC framework |
+| Feature           | Description |
+| ----------------- |:-------------:|
+| Rails 3.2         | Awesome MVC framework |
 | Twitter Bootstrap | Awesome CSS/Javascript themes|
-| Devise | Awesome Authentication|
-| CanCan | Awesome Authorization|
-| Rolify | Awesome User Roles|
-| Kaminari | Awesome Pagination|
-| Ransack | Awesome search and sortable columns|
-| Rocket Pants | Awesome API builder|
+| Devise            | Awesome Authentication|
+| CanCan            | Awesome Authorization|
+| Rolify            | Awesome User Roles|
+| Kaminari          | Awesome Pagination|
+| Ransack           | Awesome search and sortable columns|
+| Rocket Pants      | Awesome API builder|
 
 ## Development Requirements
 
