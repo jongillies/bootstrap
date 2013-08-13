@@ -16,10 +16,11 @@ YAML::load_file('db/seeds/roles_and_users.yml')['roles'].each do |role|
 end
 
 YAML::load_file('db/seeds/roles_and_users.yml')['users'].each do |_, user|
-  db_user = User.find_or_create_by_email name: user['name'],
-                                         email: user['email'],
-                                         password: user['password'],
-                                         password_confirmation: user['password']
+  db_user = User.find_or_create_by_email name:                  user['name'],
+                                         email:                 user['email'],
+                                         password:              user['password'],
+                                         password_confirmation: user['password'],
+                                         authentication_token:  user['authentication_token']
   user['roles'].each do |role|
     db_user.add_role role
   end

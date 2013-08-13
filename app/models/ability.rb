@@ -7,6 +7,13 @@ class Ability
       can :manage, :all
     end
 
+    if user.has_role?(:api)
+      can :read, Post
+      can :create, Post
+      can :update, Post
+      can :destroy, Post
+    end
+
     if user.has_role? :user
       can [:create, :read], Post
     end

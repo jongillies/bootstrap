@@ -1,11 +1,18 @@
 MyApplication::Application.routes.draw do
+
   resources :posts
 
+  namespace :api do
+    api :version => 1 do
+      resources :posts
+    end
+  end
 
   authenticated :user do
     root :to => 'home#index'
   end
-  root :to => "home#index"
+
+  root :to => 'home#index'
 
 #  devise_for :users do
 #    get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session

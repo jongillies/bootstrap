@@ -7,13 +7,22 @@ users:
     name: Administrator
     email: admin@example.com
     password: changeme
+    authentication_token: zhQy8hc1qaygDHp8JP8C
     roles:
       - admin
       - user
+  api:
+    name: Api User
+    email: api@example.com
+    password: changeme
+    authentication_token: z0000000000000000000
+    roles:
+      - api
   user:
     name: Joe User
     email: user@example.com
     password: changeme
+    authentication_token: ubqp35MSyko1Xzi4Bkso
     roles:
       - user
   user0:
