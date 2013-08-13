@@ -53,7 +53,7 @@ To authenticate against the API pass the auth_token on the URL.  Example:
 
 To get all of the posts using curl:
 
-    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X GET http://localhost:3000/api/1/posts?auth_token=z0000000000000000000
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST --data '{"post":{"description":"Woot!","user_id":6}}'  http://localhost:3000/api/1/posts?auth_token=z0000000000000000000
 
 To add a post:
 
@@ -61,7 +61,7 @@ To add a post:
 
 To update a post:
 
-    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X PUT --data "{\"post\":{\"description\":\"Woot! Woot!\"}}"  http://localhost:3000/api/1/posts/1001?auth_token=z0000000000000000000
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X PUT --data '{"post":{"description":"Woot! Woot!"}}'  http://localhost:3000/api/1/posts/1001?auth_token=z0000000000000000000
 
 To delete the post:
 
