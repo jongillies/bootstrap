@@ -4,14 +4,16 @@ Greetings!  This project is my attempt to "wire up" a complete Rails 3.2 applica
 
 Features:
 
-* Rails 3.2 | Awesome MVC framework
-* Twitter Bootstrap | Awesome CSS/Javascript themes
-* Devise | Awesome Authentication
-* CanCan | Awesome Authorization
-* Rolify | Awesome User Roles
-* Kaminari | Awesome Pagination
-* Ransack | Awesome search and sortable columns
-* Rocket Pants | Awesome API builder
+| Feature | Descrption |
+| - | - |
+| Rails 3.2 | Awesome MVC framework |
+| Twitter Bootstrap | Awesome CSS/Javascript themes|
+| Devise | Awesome Authentication|
+| CanCan | Awesome Authorization|
+| Rolify | Awesome User Roles|
+| Kaminari | Awesome Pagination|
+| Ransack | Awesome search and sortable columns|
+| Rocket Pants | Awesome API builder|
 
 ## Development Requirements
 
@@ -31,6 +33,8 @@ If all of that works, you are golden.
 
 Fire up the app!
 
+    rake db:create  # Creates bootstrap_development MySQL database
+    rake db:reset   # Initializes the database
     rails s
 
 Navigate to https://localhost:3000 and you will see your new application!
@@ -44,6 +48,26 @@ The project includes a "Posts" model which is a mini BLOG feature, cause all app
 To authenticate against the API pass the auth_token on the URL.  Example:
 
     http://localhost:3000/posts/1?auth_token=z0000000000000000000
+
+## Using the API
+
+To get all of the posts using curl:
+
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X GET http://localhost:3000/api/1/posts?auth_token=z0000000000000000000
+
+To add a post:
+
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST --data "{\"post\":{\"description\":\"Woot!\",\"user_id\":6}}"  http://localhost:3000/api/1/posts?auth_token=z0000000000000000000
+
+To update a post:
+
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X PUT --data "{\"post\":{\"description\":\"Woot! Woot!\"}}"  http://localhost:3000/api/1/posts/1001?auth_token=z0000000000000000000
+
+To delete the post:
+
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X DELETE http://localhost:3000/api/1/posts/1001?auth_token=z0000000000000000000
+
+Enjoy!
 
 # How this template was made
 
@@ -83,4 +107,3 @@ Recipes:
 Preferences:
 {:git=>true, :railsapps=>"rails3-bootstrap-devise-cancan", :database=>"sqlite", :unit_test=>"rspec", :integration=>"cucumber", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"gmail", :authentication=>"devise", :devise_modules=>"default", :authorization=>"cancan", :starter_app=>"admin_app", :form_builder=>"simple_form", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :dev_webserver=>"webrick", :templates=>"erb", :continuous_testing=>"none", :rvmrc=>false, :ban_spiders=>true}
 ```
-
