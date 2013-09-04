@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Version</th>
+    <th>Event</th>
+    <th>Who</th>
+    <th>When</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @post.versions.each do |version| %>
+      <tr>
+        <td><%= version.id %></td>
+        <td><%= version.event %></td>
+        <td><%= version.whodunnit %></td>
+        <td><%= version.created_at %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
