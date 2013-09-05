@@ -33,6 +33,8 @@ group :development, :test do
   gem 'json_spec', '>= 1.1.1'
 end
 
+gem 'devise_ldap_authenticatable'
+
 gem 'paper_trail', '~> 2.7'
 gem 'jquery-rails', '>= 2.2.1'
 gem 'bootstrap-sass', '>= 2.3.0.0'
