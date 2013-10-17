@@ -14,6 +14,7 @@ MyApplication::Application.routes.draw do
 
   root :to => 'home#index'
 
+  match '/app_env' => 'home#app_env'
 #  devise_for :users do
 #    get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
 #  end

@@ -1,0 +1,55 @@
+<h2>Application Environment</h2>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#tab-app-environment" data-toggle="tab">Environment</a></li>
+  <li><a href="#tab-loaded-gems" data-toggle="tab">Loaded Gems</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="tab-app-environment">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% [ 'url_path', 'remote_ip', 'host', 'port', 'protocol', 'software', 'app_root', 'compression',
+           'connection', 'keep_alive', 'http_accept', 'rails_environment', 'rails_environment_path', 'database_host',
+           'database_port', 'database', 'database_user', 'ip', 'port', 'agent', 'referrer' ].each do |var| %>
+          <tr>
+            <td><%= var %></td>
+            <td><%= self.instance_variable_get("@#{var}") %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="tab-pane" id="tab-loaded-gems">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @gems.sort.each do |key, value| %>
+          <tr>
+            <td><%= key %></td>
+            <td><%= value.version %></td>
+          </tr>
+      <% end %>
+
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /.tab-content -->
+
+
+
+
+
