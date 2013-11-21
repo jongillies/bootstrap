@@ -3,6 +3,8 @@
 <ul class="nav nav-tabs">
   <li class="active"><a href="#tab-app-environment" data-toggle="tab">Environment</a></li>
   <li><a href="#tab-loaded-gems" data-toggle="tab">Loaded Gems</a></li>
+  <li><a href="#tab-database-stats" data-toggle="tab">Database Stats</a></li>
+  <li><a href="#tab-configuration" data-toggle="tab">Rails.configuration</a></li>
 </ul>
 
 <div class="tab-content">
@@ -15,9 +17,13 @@
       </tr>
       </thead>
       <tbody>
-      <% [ 'url_path', 'remote_ip', 'host', 'port', 'protocol', 'software', 'app_root', 'compression',
-           'connection', 'keep_alive', 'http_accept', 'rails_environment', 'rails_environment_path', 'database_host',
-           'database_port', 'database', 'database_user', 'ip', 'port', 'agent', 'referrer' ].each do |var| %>
+      <tr>
+        <td>Rails.root</td>
+        <td><%= Rails.root %></td>
+      </tr>
+      <% ['url_path', 'remote_ip', 'host', 'port', 'protocol', 'software', 'app_root', 'compression',
+          'connection', 'keep_alive', 'http_accept', 'rails_environment', 'rails_environment_path', 'database_host',
+          'database_port', 'database', 'database_user', 'ip', 'port', 'agent', 'referrer'].each do |var| %>
           <tr>
             <td><%= var %></td>
             <td><%= self.instance_variable_get("@#{var}") %></td>
@@ -25,8 +31,8 @@
       <% end %>
       </tbody>
     </table>
-
   </div>
+
   <div class="tab-pane" id="tab-loaded-gems">
     <table class="table table-striped">
       <thead>
@@ -47,6 +53,43 @@
     </table>
   </div>
 
+  <div class="tab-pane" id="tab-database-stats">
+
+    <tbody>
+    <% db_stats.each do |table, data| %>
+        <table class="table table-striped">
+          <h3><%= table %></h3>
+          <% data.each do |k, v| %>
+              <tr>
+                <td><%= k.downcase %></td>
+                <td><%= v %></td>
+              </tr>
+          <% end %>
+        </table>
+    <% end %>
+
+    </tbody>
+
+  </div>
+
+  <div class="tab-pane" id="tab-configuration">
+
+    <tbody>
+        <table class="table table-striped">
+          <% Rails.configuration.instance_variable_names.each do |method| %>
+              <% next if method.to_s.include?('=') %>
+
+              <tr>
+                <td><%= method %></td>
+                <td><%= Rails.configuration.instance_variable_get("#{method}") %></td>
+              </tr>
+
+        <% end %>
+        </table>
+
+    </tbody>
+
+  </div>
 </div><!-- /.tab-content -->
 
 
