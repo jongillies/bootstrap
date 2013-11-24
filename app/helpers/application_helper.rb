@@ -12,4 +12,12 @@ module ApplicationHelper
     html.html_safe
   end
 
+  def format_date_time(date_time)
+    begin
+      date_time.to_s(:long)
+    rescue
+      ''
+    end
+  end
+
 end

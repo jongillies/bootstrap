@@ -5,7 +5,7 @@
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#tabs1-pane1" data-toggle="tab">Details</a></li>
-  <li><a href="#tabs1-pane2" data-toggle="tab">Tab 2</a></li>
+  <li><a href="#tabs1-pane2" data-toggle="tab">Audit Trail</a></li>
   <li><a href="#tabs1-pane3" data-toggle="tab">Tab 3</a></li>
   <li><a href="#tabs1-pane4" data-toggle="tab">Tab 4</a></li>
 </ul>
@@ -23,11 +23,7 @@
     </dl>
   </div>
   <div class="tab-pane" id="tabs1-pane2">
-    <h4>Pane 2 Content</h4>
-
-    <p>Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas. Duis congue
-      viverra arcu, ac aliquet turpis rutrum a. Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus
-      at nisi turpis.</p>
+    <%= render :partial => 'audits' %>
   </div>
   <div class="tab-pane" id="tabs1-pane3">
     <h4>Pane 3 Content</h4>

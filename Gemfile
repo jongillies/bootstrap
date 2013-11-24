@@ -33,12 +33,15 @@ group :development, :test do
   gem 'json_spec', '>= 1.1.1'
 end
 
+gem 'devise_ldap_authenticatable'
+
+gem 'paper_trail', '~> 2.7'
 gem 'jquery-rails', '>= 2.2.1'
 gem 'bootstrap-sass', '>= 2.3.0.0'
 gem 'simple_form', '>= 2.1.0'
 gem 'figaro', '>= 0.6.3'
 
-gem 'devise', '>= 2.2.3' # Authentication
+gem 'devise', '= 2.2.3' # Authentication
 gem 'cancan', '>= 1.6.9' # Authorization
 gem 'rolify', '>= 3.2.0' # Roles
 gem 'kaminari', '>= 0.14.1' # Pagination
